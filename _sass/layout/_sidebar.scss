@@ -391,6 +391,18 @@
     flex: 1;
     max-width: 100%;
   }
+
+  // Override page layout styles for bibliography content
+  .page {
+    @media (min-width: 57.8125em) {
+      width: 100% !important;
+      float: none !important;
+      margin-right: 0 !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      margin-left: 0 !important;
+    }
+  }
 }
 
 /*
