@@ -1,8 +1,8 @@
 ---
-layout: archive
+layout: single
 title: "Events"
 permalink: /events/
-author_profile: true
+author_profile: false
 ---
 
 <div class="events-container">
