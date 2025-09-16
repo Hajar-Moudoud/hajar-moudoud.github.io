@@ -3,7 +3,8 @@
     "allow": [
       "WebSearch",
       "WebFetch(domain:www.researchgate.net)",
-      "WebFetch(domain:scholar.google.ca)"
+      "WebFetch(domain:scholar.google.ca)",
+      "Bash(mkdir:*)"
     ],
     "deny": [],
     "ask": []

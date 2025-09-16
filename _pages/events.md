@@ -5,84 +5,50 @@ permalink: /events/
 author_profile: false
 ---
 
+{% include base_path %}
+
 <div class="events-container">
   <!-- Large Featured Event -->
+  {% assign featured_event = site.events | where: "type", "featured" | first %}
+  {% if featured_event %}
   <div class="featured-event">
     <div class="event-content">
       <div class="event-date">
-        <span class="year">2025</span>
+        <span class="year">{{ featured_event.date | date: "%Y" }}</span>
       </div>
       <div class="event-details">
-        <h2 class="event-title">International Conference on Cybersecurity and AI</h2>
+        <h2 class="event-title">{{ featured_event.title }}</h2>
         <div class="event-meta">
           <div class="event-venue">
-            <h3>UQO: Advanced Cybersecurity Research</h3>
-            <p>Jun 15, 2025 — Gatineau, QC</p>
+            <h3>{{ featured_event.venue }}</h3>
+            <p>{{ featured_event.date | date: "%b %d, %Y" }} — {{ featured_event.location }}</p>
           </div>
           <div class="event-logo">
-            <img src="{{ base_path }}/images/uqo-logo.png" alt="UQO" class="venue-logo">
+            <img src="{{ base_path }}/images/{{ featured_event.logo }}" alt="{{ featured_event.venue }}" class="venue-logo">
           </div>
         </div>
       </div>
     </div>
   </div>
+  {% endif %}
 
   <!-- Regular Events List -->
   <div class="events-list">
+    {% assign regular_events = site.events | where: "type", "regular" | sort: "date" | reverse %}
+    {% for event in regular_events %}
     <div class="event-item">
       <div class="event-info">
-        <h3 class="event-title">Workshop: AI Security in IoT Networks</h3>
-        <p class="event-description">Hands-on workshop on implementing AI-driven security solutions</p>
+        <h3 class="event-title">{{ event.title }}</h3>
+        <p class="event-description">{{ event.content | strip_html | truncate: 100 }}</p>
         <div class="event-meta">
-          <span class="event-date">May 28, 2025</span> —
-          <span class="event-location">Online</span>
+          <span class="event-date">{{ event.date | date: "%b %d, %Y" }}</span> —
+          <span class="event-location">{{ event.location }}</span>
         </div>
       </div>
       <div class="event-logo">
-        <img src="{{ base_path }}/images/workshop-logo.png" alt="Workshop" class="venue-logo">
+        <img src="{{ base_path }}/images/{{ event.logo }}" alt="{{ event.venue }}" class="venue-logo">
       </div>
     </div>
-
-    <div class="event-item">
-      <div class="event-info">
-        <h3 class="event-title">Cybersecurity Research Symposium</h3>
-        <p class="event-description">Annual symposium featuring latest research in network security</p>
-        <div class="event-meta">
-          <span class="event-date">Apr 20, 2025</span> —
-          <span class="event-location">University of Sherbrooke</span>
-        </div>
-      </div>
-      <div class="event-logo">
-        <img src="{{ base_path }}/images/usherbrooke-logo.png" alt="UdeS" class="venue-logo">
-      </div>
-    </div>
-
-    <div class="event-item">
-      <div class="event-info">
-        <h3 class="event-title">Blockchain Security Conference</h3>
-        <p class="event-description">Conference on blockchain applications in cybersecurity frameworks</p>
-        <div class="event-meta">
-          <span class="event-date">Mar 18, 2025</span> —
-          <span class="event-location">Montreal, QC</span>
-        </div>
-      </div>
-      <div class="event-logo">
-        <img src="{{ base_path }}/images/blockchain-conf-logo.png" alt="Blockchain Conf" class="venue-logo">
-      </div>
-    </div>
-
-    <div class="event-item">
-      <div class="event-info">
-        <h3 class="event-title">Machine Learning for Cybersecurity Workshop</h3>
-        <p class="event-description">Technical workshop on ML applications in threat detection</p>
-        <div class="event-meta">
-          <span class="event-date">Feb 15, 2025</span> —
-          <span class="event-location">Virtual Event</span>
-        </div>
-      </div>
-      <div class="event-logo">
-        <img src="{{ base_path }}/images/ml-workshop-logo.png" alt="ML Workshop" class="venue-logo">
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </div>

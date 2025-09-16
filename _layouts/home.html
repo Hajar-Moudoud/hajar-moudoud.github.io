@@ -31,35 +31,18 @@ layout: default
       <div class="student-group">
         <h3>Ph.D. Students</h3>
         <div class="students-grid">
+          {% assign phd_students = site.students | where: "type", "phd" | sort: "order" %}
+          {% for student in phd_students %}
           <div class="student-card">
             <div class="student-avatar">
-              <img src="{{ base_path }}/images/bio-photo.jpg" alt="Sarah Chen" class="student-photo">
+              <img src="{{ base_path }}/images/{{ student.photo }}" alt="{{ student.name }}" class="student-photo">
             </div>
             <div class="student-info">
-              <h4 class="student-name">Sarah Chen</h4>
-              <p class="student-affiliation">PhD Student, University of Technology of Troyes</p>
+              <h4 class="student-name">{{ student.name }}</h4>
+              <p class="student-affiliation">{{ student.affiliation }}</p>
             </div>
           </div>
-
-          <div class="student-card">
-            <div class="student-avatar">
-              <img src="{{ base_path }}/images/bio-photo.jpg" alt="Ahmed Rahman" class="student-photo">
-            </div>
-            <div class="student-info">
-              <h4 class="student-name">Ahmed Rahman</h4>
-              <p class="student-affiliation">PhD Student, University of Sherbrooke</p>
-            </div>
-          </div>
-
-          <div class="student-card">
-            <div class="student-avatar">
-              <img src="{{ base_path }}/images/bio-photo.jpg" alt="Maria Gonzalez" class="student-photo">
-            </div>
-            <div class="student-info">
-              <h4 class="student-name">Maria Gonzalez</h4>
-              <p class="student-affiliation">PhD Student, Université du Québec en Outaouais</p>
-            </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
 
@@ -67,45 +50,18 @@ layout: default
       <div class="student-group">
         <h3>Master's Students</h3>
         <div class="students-grid">
+          {% assign msc_students = site.students | where: "type", "msc" | sort: "order" %}
+          {% for student in msc_students %}
           <div class="student-card">
             <div class="student-avatar">
-              <img src="{{ base_path }}/images/bio-photo.jpg" alt="David Kim" class="student-photo">
+              <img src="{{ base_path }}/images/{{ student.photo }}" alt="{{ student.name }}" class="student-photo">
             </div>
             <div class="student-info">
-              <h4 class="student-name">David Kim</h4>
-              <p class="student-affiliation">MSc Student, University of Technology of Troyes</p>
+              <h4 class="student-name">{{ student.name }}</h4>
+              <p class="student-affiliation">{{ student.affiliation }}</p>
             </div>
           </div>
-
-          <div class="student-card">
-            <div class="student-avatar">
-              <img src="{{ base_path }}/images/bio-photo.jpg" alt="Elena Popov" class="student-photo">
-            </div>
-            <div class="student-info">
-              <h4 class="student-name">Elena Popov</h4>
-              <p class="student-affiliation">MSc Student, University of Sherbrooke</p>
-            </div>
-          </div>
-
-          <div class="student-card">
-            <div class="student-avatar">
-              <img src="{{ base_path }}/images/bio-photo.jpg" alt="Thomas Martin" class="student-photo">
-            </div>
-            <div class="student-info">
-              <h4 class="student-name">Thomas Martin</h4>
-              <p class="student-affiliation">MSc Student, Université du Québec en Outaouais</p>
-            </div>
-          </div>
-
-          <div class="student-card">
-            <div class="student-avatar">
-              <img src="{{ base_path }}/images/bio-photo.jpg" alt="Fatima Al-Zahra" class="student-photo">
-            </div>
-            <div class="student-info">
-              <h4 class="student-name">Fatima Al-Zahra</h4>
-              <p class="student-affiliation">MSc Student, Université du Québec en Outaouais</p>
-            </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </div>
