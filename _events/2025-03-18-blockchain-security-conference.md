@@ -4,7 +4,6 @@ date: 2025-03-18
 venue: "Montreal Convention Center"
 location: "Montreal, QC"
 type: "regular"
-logo: "blockchain-conf-logo.png"
 order: 4
 ---
 

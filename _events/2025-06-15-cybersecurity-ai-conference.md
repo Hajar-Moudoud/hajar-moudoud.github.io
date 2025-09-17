@@ -4,7 +4,6 @@ date: 2025-06-15
 venue: "UQO: Advanced Cybersecurity Research"
 location: "Gatineau, QC"
 type: "regular"
-logo: "uqo-logo.png"
 order: 1
 ---
 

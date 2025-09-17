@@ -4,7 +4,6 @@ date: 2025-02-15
 venue: "Virtual Event"
 location: "Virtual Event"
 type: "regular"
-logo: "ml-workshop-logo.png"
 order: 5
 ---
 

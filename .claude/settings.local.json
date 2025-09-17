@@ -4,7 +4,10 @@
       "WebSearch",
       "WebFetch(domain:www.researchgate.net)",
       "WebFetch(domain:scholar.google.ca)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "WebFetch(domain:www.ieeesmc2025.org)",
+      "WebFetch(domain:sites.google.com)",
+      "WebFetch(domain:rseclab.com)"
     ],
     "deny": [],
     "ask": []

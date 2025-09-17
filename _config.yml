@@ -310,7 +310,7 @@ defaults:
       type: events
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       share: true
   # _news
   - scope:
@@ -318,7 +318,7 @@ defaults:
       type: news
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       share: true
 
 

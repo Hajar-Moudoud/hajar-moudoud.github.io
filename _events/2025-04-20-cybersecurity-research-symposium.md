@@ -4,7 +4,6 @@ date: 2025-04-20
 venue: "University of Sherbrooke"
 location: "University of Sherbrooke"
 type: "regular"
-logo: "usherbrooke-logo.png"
 order: 3
 ---
 

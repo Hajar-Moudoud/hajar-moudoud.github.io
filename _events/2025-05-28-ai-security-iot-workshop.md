@@ -4,7 +4,6 @@ date: 2025-05-28
 venue: "Online Workshop"
 location: "Online"
 type: "regular"
-logo: "workshop-logo.png"
 order: 2
 ---
 
