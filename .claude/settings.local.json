@@ -7,7 +7,11 @@
       "Bash(mkdir:*)",
       "WebFetch(domain:www.ieeesmc2025.org)",
       "WebFetch(domain:sites.google.com)",
-      "WebFetch(domain:rseclab.com)"
+      "WebFetch(domain:rseclab.com)",
+      "WebFetch(domain:www.semanticscholar.org)",
+      "Bash(ls:*)",
+      "WebFetch(domain:ieeexplore.ieee.org)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []
