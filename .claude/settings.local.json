@@ -11,7 +11,21 @@
       "WebFetch(domain:www.semanticscholar.org)",
       "Bash(ls:*)",
       "WebFetch(domain:ieeexplore.ieee.org)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git log:*)",
+      "Bash(git config:*)",
+      "Bash(git filter-branch:*)",
+      "Bash(git commit:*)",
+      "Bash(FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch:*)",
+      "Bash(git stash:*)",
+      "Bash(git remote:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(cmdkey /list:*)",
+      "Bash(findstr:*)",
+      "Bash(cmdkey /delete:LegacyGeneric:target=git:https://github.com)",
+      "Bash(cmdkey /delete:\"git:https://github.com\")",
+      "Bash(git rm:*)"
     ],
     "deny": [],
     "ask": []
