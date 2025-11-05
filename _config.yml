@@ -23,7 +23,7 @@ repository               : "academic-portfolio-user/hajar.moudoud.portfolio"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "hajar.jpeg"
+  avatar           : "Hajar.jpeg"
   name             : "Hajar Moudoud"
   pronouns         : # example: "she/her"
   bio              : "Professor of Computer Science and Engineering at UQO"
