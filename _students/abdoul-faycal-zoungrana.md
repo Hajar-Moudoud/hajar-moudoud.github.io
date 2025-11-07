@@ -1,6 +1,6 @@
 ---
 name: "Abdoul Fayçal Zoungrana"
-type: "masters"
+type: "msc"
 affiliation: "Master's Student, Université du Québec en Outaouais"
 photo: "bio-photo.jpg"
 order: 8

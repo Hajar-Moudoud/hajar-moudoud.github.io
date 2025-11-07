@@ -1,6 +1,6 @@
 ---
 name: "Ousmane Alassane Soultana"
-type: "masters"
+type: "msc"
 affiliation: "Master's Student, Université du Québec en Outaouais"
 photo: "bio-photo.jpg"
 order: 7
