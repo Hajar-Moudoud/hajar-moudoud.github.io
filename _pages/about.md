@@ -14,7 +14,7 @@ I am a Professor in the Department of Computer Science and Engineering at the Un
 
 I completed my Ph.D. in Computer Science from the University of Technology of Troyes, France, and a Ph.D. in Engineering from the University of Sherbrooke, Canada, both in 2022. Prior to my current position, I worked as a researcher focusing on IoT security, blockchain applications, and machine learning for cybersecurity.
 
-My research has been published in top-tier venues and I have established collaborations with researchers at Polytechnique Montreal, CNAM Paris University, INRS University of Quebec, and Sharjah University. I am particularly interested in the intersection of artificial intelligence and cybersecurity, developing innovative solutions for securing IoT ecosystems and implementing blockchain technologies for enhanced security frameworks.
+My research has been published in top-tier venues and flagship conferences. My work was recognized with several best paper awards at IEEE conferences, including IEEE LCN 2021 and IEEE IMETA 2024. I have established international collaborations including CNAM Paris University and Sharjah University. I am particularly interested in the intersection of artificial intelligence and cybersecurity, developing innovative solutions for securing IoT ecosystems and implementing blockchain technologies for enhanced security frameworks.
 
 ## Research Interests
 
@@ -37,9 +37,10 @@ My research has been published in top-tier venues and I have established collabo
 
 I teach courses in cybersecurity and computer systems:
 
-* **CYB1003** - Introduction to Cybersecurity
-* **CYB6023** - Advanced Digital Forensics and Incident Response
-* **INF6423** - Cybersecurity and Computer Systems Reliability
+* **CYB6063** - Méthodes avancées en cybersécurité basée sur l'intelligence artificielle (Advanced Methods in AI-Based Cybersecurity)
+* **CYB1003** - Introduction à la cybersécurité (Introduction to Cybersecurity)
+* **CYB6023** - Forensique numérique avancée et réponse aux incidents (Advanced Digital Forensics and Incident Response)
+* **INF6423** - Cybersécurité et fiabilité des systèmes informatiques (Cybersecurity and Computer Systems Reliability)
 
 ## Contact
 
