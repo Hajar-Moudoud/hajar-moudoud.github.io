@@ -1,3 +1,24 @@
 <script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
 
+<script>
+function copyBibtex(button) {
+  const bibtex = button.getAttribute('data-bibtex');
+  navigator.clipboard.writeText(bibtex).then(function() {
+    // Change icon to checkmark temporarily
+    const icon = button.querySelector('i');
+    const originalClass = icon.className;
+    icon.className = 'fas fa-check';
+    icon.style.color = '#5cb85c';
+
+    setTimeout(function() {
+      icon.className = originalClass;
+      icon.style.color = '#5bc0de';
+    }, 2000);
+  }).catch(function(err) {
+    console.error('Failed to copy: ', err);
+    alert('Failed to copy BibTeX citation');
+  });
+}
+</script>
+
 {% include analytics.html %}
