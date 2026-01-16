@@ -30,7 +30,11 @@
       "Bash(Get-ChildItem \"e:\\\\phd\\\\portfolio\\\\academic_portfolio\\\\_publications\\\\*.md\")",
       "Bash(ForEach-Object { Get-Content $_FullName)",
       "Bash(Select-Object -First 10 })",
-      "Bash(Out-String)"
+      "Bash(Out-String)",
+      "Bash(grep:*)",
+      "Bash(while read f)",
+      "Bash(do grep \"^title:\" \"$f\")",
+      "Bash(done)"
     ],
     "deny": [],
     "ask": []
